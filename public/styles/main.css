@@ -1,0 +1,17 @@
+.y-sticky {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.y-wrap {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+#section__button {
+display: block;
+margin: 0 auto;
+}

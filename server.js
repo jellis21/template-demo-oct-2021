@@ -11,6 +11,25 @@ server.get('/heartbeat', (req, res) => {
   })
 });
 
+
+server.use('/', express.static(__dirname + '/public'));
+
+
+// template rendering
+server.engine('html', es6Renderer);
+server.set('views', 'views');
+server.set('view engine', 'html');
+
+
+server.get('/', (req, res) => {
+  res.render('landing', {
+    partials: {
+      footer: 'partials/footer',
+      header: 'partials/header'
+    }
+  })
+});
+
 const { PORT } = process.env;
 
 server.listen(PORT, () => {
