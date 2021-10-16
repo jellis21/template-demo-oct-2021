@@ -35,13 +35,13 @@ margin: 0 auto;
   width: 100%;
 }
 
-@media only screen and (max-width: 767px) {
- .gallery {
+    @media only screen and (max-width: 767px) {    
+  .gallery {
    display: flex;
    flex-direction: column;
  }
 
-  .gallery__image-child {
+   .gallery__image-child {
     margin: 0 auto;
   }
 
@@ -49,12 +49,12 @@ margin: 0 auto;
     height: 71px;
     overflow: hidden;
     width: 141px;
-  }
+  } 
 
-  .gallery__image--primary img {
+   .gallery__image--primary img {
     width: 100%;
-  }
-}
+  }  
+     }    
 
 @media only screen and (min-width: 768px) {
   .gallery {
@@ -71,4 +71,5 @@ margin: 0 auto;
     display: flex;
     }
     
+
 }
